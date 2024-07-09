@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TastyBites</title>
+    <link rel="stylesheet" href="dev.css">
+</head>
+<body>
+    <header>
+        <a href="#home"><img src="image/logo.png" alt="logo" width="110px" class="logo"></a>
+        <img src="image/more.png" alt="more" id="more_img">
+        <nav class="header_nav">
+            <ul>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#galerie">galerie</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <div class="description">
+            <h1>
+                Tasty Bites
+            </h1>
+            <p>
+                Tasty Bites is a vibrant and welcoming restaurant where you can indulge in a <br> variety of mouthwatering dishes that hits the spot.
+            </p>
+            <button>
+                <a href="#about">About us</a>
+            </button>
+        </div>
+    </div>
+    <div id="menu">
+        <h1 class="heading_menu">Our Menu</h1>
+        <div class="container">
+            <div class="box_menu">
+                <img src="image/humburger_s.png" alt="Humburger" width="100%">
+                <div class="content">
+                    <h2>Humburger</h2>
+                    <p>Savor our juicy hamburger perfect blend of beef and toppings on a soft bun.</p>
+                </div>
+            </div>
+            <div class="box_menu">
+                <img src="image/pizza_vertical.png" alt="pizza" width="100%">
+                <div class="content">
+                    <h2>pizza</h2>
+                    <p>Hot, delicious pizza made with fresh dough, zesty sauce, melted cheese, and your favorite toppings.</p>
+                </div>
+            </div>
+            <div class="box_menu">
+                <img src="image/burritos.png" alt="burritos" width="100%">
+                <div class="content">
+                    <h2>Burritos</h2>
+                    <p>Our tasty burritos are filled with your favorite ingredients, wrapped in a warm tortilla.</p>
+                </div>
+            </div>
+            <div class="box_menu">
+                <img src="image/nachos.png" alt="nachos" width="100%">
+                <div class="content">
+                    <h2>Nachos</h2>
+                    <p>Our mouthwatering nachos feature crispy chips, melted cheese, savory meats, fresh veggies, and zesty salsa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="galerie">
+        <h1 class="heading_galerie">Galerie</h1>
+        <div class="image_box">
+            <img src="image/picture1.jpg" alt="food_picture">
+            <img src="image/picture2.jpg" alt="food_picture">
+            <img src="image/picture3.jpg" alt="food_picture">
+            <img src="image/picture4.jpg" alt="food_picture">
+            <img src="image/picture5.jpg" alt="food_picture">
+            <img src="image/picture6.jpg" alt="food_picture">
+            <img src="image/picture7.jpg" alt="food_picture">
+            <img src="image/picture8.jpg" alt="food_picture">
+            <img src="image/picture9.jpg" alt="food_picture">
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact_form">
+            <form>
+                <h3>Contact Us</h3>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name" required>
+                <textarea name="message" id="message" rows="4" placeholder="how can we help you?"></textarea>
+                <button type="submit">send message</button>
+            </form>
+        </div>
+        <div class="our_contact">
+            <div class="box" id="telephone">
+                <img src="image/telephone.png" alt="telephone" width="25%">
+                <h1>Telephone</h1>
+                <p>0776723943</p>
+            </div>
+            <div class="box" id="email">
+                <img src="image/mail.png" alt="mail" width="25%">
+                <h1>Mail</h1>
+                <p>TastyBytes@gmail.com</p>
+            </div>
+            <div class="box" id="gps">
+                <img src="image/address.png" alt="address" width="25%">
+                <h1>Address</h1>
+                <p>1381 Boylston Street Boston, MA  02215</p>
+            </div>
+        </div>
+    </div>
+    <footer id="about">
+        <div class="content_footer">
+            <div>
+                <h3>Visit Us</h3>
+                <P>1381 Boylston Street <br> Boston, MA 02215</P>
+            </div>
+            <div>
+                <h3>Opening Hours</h3>
+                <p>
+                    WEDNESDAY  - THURSDAY 11:00 am - 02:00 am <br>
+                    SATURDAY - TUESDAY 11:00 am - 12:00 pm <br>
+                    FRIDAY 15:00 pm - 12:00 am
+                </p>
+            </div>
+            <div>
+                <h3>Let's Get Social</h3>
+                <nav class="about_nav">
+                    <a href="https://www.instagram.com/TastyBytes/"><img src="image/instagram.png" alt="facebook" width="35px"></a>
+                    <a href="https://www.facebook.com/TastyBytes/"><img src="image/facebook.png" alt="instagram" width="35px"></a>
+                    <a href="https://www.twitter.com/TastyBytes/"><img src="image/twitter.png" alt="twitter" width="35px"></a>
+                    <!-- THIS LINKS ARE NOT REAL ARE JUST EXAMPLES -->
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 HAMZAOUI  Adel, All rights reserved.</p>
+    </footer>
+    <script src="dev.js"></script>
+</body>
+</html>
