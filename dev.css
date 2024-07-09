@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 15px;    /* THE NORMAL FONT SIZE IS 10PX IF THE THE PAGE GET SMALL MAKE IT 15PX */
+}
+
+body{
+    background-color: #333;
+}
+
+    /***********************  HEADER ***********************/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(10, 10, 10);
+}
+
+#more_img{
+    display: none;
+}
+
+.header_nav ul{
+    display: flex;
+}
+
+.header_nav{
+    margin-right: 5%;
+}
+
+.header_nav ul li a{
+    display: block;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.header_nav ul li{
+    margin-right: 2rem;
+}
+
+.header_nav li:last-child{
+    margin-right: 0;
+}
+
+.header_nav ul li a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.logo{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+}
+
+    /***********************  HOME ***********************/
+
+#home{
+    height: calc(100vh - 8rem);
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(image/restaurant2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.description{
+    display: inline-block;
+    margin: 8rem 0 0 3rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #00000083;
+}
+
+.description h1{
+    font-size: 4.2rem;
+    color: #dfa4a4;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.description p{
+    font-size: 2rem;
+    color: #d1c6c6;
+    text-shadow: 0.2rem 0.2rem 0.4rem #000;
+    line-height: 1.5;
+}
+.description button{
+    background-color: #e4b6b6;
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    border: none;
+    margin: 1rem 0 1rem 0.4rem;
+}
+.description button a{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+    /***********************  MENU ***********************/
+
+#menu{
+    padding: 1REM;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    margin: 0.5rem;
+    justify-items: center;
+    text-align: center;
+}
+
+.box_menu{
+    background-color: whitesmoke;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .content h2{
+    font-size: 2.8rem;
+}
+
+.container .content p{
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+}
+
+.content{
+    background-color: #ece4e4;
+}
+
+.heading_menu{
+    font-size: 3rem;
+    color: white;
+    background-color: #413f3f;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+    /***********************  CONTACT ***********************/
+
+#contact{
+    padding: 1rem;
+}
+.our_contact{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.our_contact .box{
+    background-color: #5c5656;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.our_contact .box:hover{
+    background-color: #d1c6c6;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.our_contact .box p{
+    font-size: 1.9rem;
+    margin-top: 1rem;
+}
+
+.contact_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+form{
+    background-color: #5c5656;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2vw 4vw;
+    max-width: 60rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+form h3{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 1rem 0;
+    padding: 1rem;
+    outline: none;
+    background-color: #f5f5f5;
+    font-size: 1.3rem;
+}
+
+form button{
+    padding: 1rem 0rem;
+    background-color: #ff5361;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 40%;
+    margin: 2rem auto 0;
+    border-radius: 3rem;
+}
+
+    /***********************  GALERIE ***********************/
+
+#galerie .image_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #242323;
+    border-radius: 1rem;
+}
+
+#galerie .image_box img{
+    max-width: 100%;
+    height: auto;
+}
+
+.heading_galerie{
+    font-size: 3rem;
+    color: white;
+    background-color: #413f3f;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+    /***********************  FOOTER ***********************/
+
+#about{
+    background-color: #312e2e;
+    color: white;
+}
+
+.content_footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 3rem 15rem;
+}
+
+.content_footer h3{
+    font-weight: 800;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.content_footer p{
+    font-size: 1.1rem; 
+    line-height: 2.2;
+}
+
+.copyright{
+    padding: 6rem 0;
+    text-align: center;
+}
+
+#about nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#about nav a{
+    background-color: rgb(255, 255, 255);
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+
+@media screen and (min-width: 951px) and (max-width: 1190px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 950px) {
+    html{
+        font-size: 11px;
+    }
+    .logo{
+        width: 90px;
+    }
+    #galerie .image_box{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    /***********************  HEADER ***********************/
+
+    header{
+        height: 5.5rem;
+        border-bottom: white solid 1px;
+    }
+    .logo{
+        width: 80px;
+    }
+    #more_img{
+        display: block;
+        cursor: pointer;
+        margin-right: 5%;
+    }
+    .header_nav{
+        height: 0; 
+        position: absolute;
+        top: 5.6rem;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        transition: 0.6s;
+        overflow: hidden;
+        border-bottom: solid rgb(255, 255, 255) 1px;
+    }
+    .header_nav.active{
+        height: 15rem;
+    }
+    .header_nav.active ul{
+        opacity: 1;
+    }
+    .header_nav ul{
+        display: block;
+        width: fit-content;
+        margin: 3rem auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .header_nav ul li{
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+
+        /***********************  HOME ***********************/
+
+    #home{
+        height: calc(100vh - 5.5rem);
+    }
+    .description h1{
+        font-size: 3.2rem;
+    }
+    
+    .description p{
+        font-size: 1.7rem;
+        line-height: 1.4;
+    }
+    .description button a{
+        font-size: 1.3rem;
+    }
+
+        /***********************  MENU ***********************/
+
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+        /***********************  GALERIE ***********************/
+
+    #galerie .image_box{
+        grid-template-columns: 1fr;
+    }
+    #galerie .image_box{
+        margin: 1rem 3rem;
+    }
+
+        /***********************  CONTACT ***********************/
+
+    form{
+        width: 90%;
+    }
+    .our_contact{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+    .our_contact .box{
+        margin: 1rem 0;
+        width: 75%;
+    }
+
+        /***********************  FOOTER ***********************/
+
+    .content_footer{
+        display: block;
+        padding: 0;
+    }
+    .content_footer h3{
+        margin-bottom: 2rem;
+    }
+    .content_footer div{
+        padding: 2rem 3rem;
+    }
+    #about nav{
+        width: 50%;
+    }
+}
