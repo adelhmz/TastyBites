@@ -228,9 +228,9 @@ form button{
     border-radius: 3rem;
 }
 
-    /***********************  GALERIE ***********************/
+    /***********************  GALLERY ***********************/
 
-#galerie .image_box{
+#gallery .image_box{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: auto;
@@ -241,12 +241,12 @@ form button{
     border-radius: 1rem;
 }
 
-#galerie .image_box img{
+#gallery .image_box img{
     max-width: 100%;
     height: auto;
 }
 
-.heading_galerie{
+.heading_gallery{
     font-size: 3rem;
     color: white;
     background-color: #413f3f;
@@ -310,7 +310,7 @@ form button{
     .logo{
         width: 90px;
     }
-    #galerie .image_box{
+    #gallery .image_box{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -387,10 +387,10 @@ form button{
 
         /***********************  GALERIE ***********************/
 
-    #galerie .image_box{
+    #gallery .image_box{
         grid-template-columns: 1fr;
     }
-    #galerie .image_box{
+    #gallery .image_box{
         margin: 1rem 3rem;
     }
 
@@ -426,4 +426,5 @@ form button{
     #about nav{
         width: 50%;
     }
+
 }
